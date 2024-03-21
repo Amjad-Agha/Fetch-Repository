@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fetch repositries</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .repos-container {
+      max-width: 650px;
+      margin: 0 auto;
+    }
+    .get-repos {
+      display: flex;
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+    .get-repos input {
+      flex: 1;
+      border: 1px solid orange;
+      margin-right: 10px;
+      padding: 10px;
+      border-radius: 3px;
+    }
+    .get-repos span {
+      width: 92px;
+      background-color: orange;
+      color: white;
+      padding: 10px;
+      border-radius: 3px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .show-data {
+      background-color: #eee;
+      padding: 20px;
+    }
+    .show-data > span {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #222;
+      background-color: white;
+      padding: 10px;
+      margin: 5px auto ;
+      border-radius: 3px;
+    }
+    .show-data span .repo-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .show-data span .repo-box a,
+    .show-data span .repo-box span {
+      width: 90px;
+      text-align: center;
+      color: #fff;
+      font-size: 15px;
+      padding: 4px;
+      border-radius: 4px;
+      margin-left: 4px;
+    }
+    .show-data span .repo-box span {
+      background-color: #009688;
+    }
+    .show-data span .repo-box a {
+      text-decoration: none;
+      background-color: #e91e63;
+    }
+    .show-data span .repo-box a:hover {
+      background-color: #cf1a56;
+      box-shadow: 0 0 3px #e91e63;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="repos-container">
+    <div class="get-repos">
+      <input type="text" placeholder="Github Username">
+      <span class="get-button">Get Repos</span>
+    </div>
+    <div class="show-data">
+      No Data To Show
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
